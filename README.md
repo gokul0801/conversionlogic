@@ -71,10 +71,11 @@ For example (only showing top-3):
 ##3) User-Channel Paths##
 A user may have multiple devices, so the path for that user should span all of the Device IDs observed for a user. In the sample log, we can consider the Username field to correspond to a single user (note that Username is not always populated, e.g. if the user is not logged-in at the time). 
 
-Write a progra, to emit the sequence of Channels for all Device IDs associated with a single Username, including events that happened while the user was not logged-in"
+Write a progra, to emit the sequence of Channels for all Device IDs associated with each Username, including events that happened while the user was not logged-in:
 
     <Username>: <timestamp-ordered, comma-delimited list of channels>
 
-For example, a User (fred) may have seen a display ad on device A, then a video ad on device B, then clicked on a search ad on device A. The expected output is:
+For example, a User (fred) may have seen a display ad on device A, then a video ad on device B, then clicked on a search ad on device A. Another user (mary) saw a video ad on device C, then a mobile ad on devices E and F. The expected output is:
 
     fred: display,video,search
+    mary: video,mobile,mobile
