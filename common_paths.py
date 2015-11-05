@@ -1,6 +1,5 @@
 import optparse
 import datetime
-import itertools
 from heapq import nlargest
 
 ### Process input Events file
