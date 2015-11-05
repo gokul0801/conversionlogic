@@ -29,7 +29,7 @@ def process_file(opts):
 	    channels += event['channel'] + ','
 	channels += eventLst[-1]['channel']
         freqDict[channels] = freqDict.get(channels, 0) + 1
-    ### Print the sorted output based on values for frequencny dicitonary - top 20 elements
+    ### Print the sorted output based on values for frequency dictionary - top 20 elements
     for channels, freq in nlargest(20, freqDict.iteritems(), key=lambda k: k[1]):
         print str(freq) + ': ' + channels
             
