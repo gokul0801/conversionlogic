@@ -6,6 +6,6 @@ Programs can be run as follows:
 2) python common_paths.py -f <input events file>
 3) python user_paths.py -f <input events file>
 
-Output for the 3 programs for sample events file is in ex01.result, ex02.result and ex03.result
+Output for the 3 programs for sample events file are in ex01.result, ex02.result and ex03.result.
 
 
