@@ -31,7 +31,7 @@ def process_file(opts):
 
 if __name__ == '__main__':
     parser = optparse.OptionParser()
-    parser.add_option('-f', '--file', dest='inputFile', metavar='FILE', help="input events file")
+    parser.add_option('-f', '--file', action='store', dest='inputFile', metavar='FILE', help="input events file")
     opts, args = parser.parse_args()
     if opts.inputFile is None:
        raise Exception("Error: Input file not given")
