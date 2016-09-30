@@ -2,7 +2,7 @@ import optparse
 import datetime
 from heapq import nlargest
 
-### Process input Events file
+### Process input Events file.
 ### Store the event information for each entry in the deviceId dictionary
 ### Sort the list of events for each device based on timestamp
 def process_file(opts):
